@@ -1,0 +1,215 @@
+body{
+    margin:0;
+    background: #E5E5E5;
+}
+
+*{
+    box-sizing: border-box !important;
+}
+
+/* HEADER */
+.container{
+    font-size: 28px;
+}
+
+header{
+    padding: 16px 0;
+}
+
+header .header-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-wrap ul.nav-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center; 
+}
+
+header .header-wrap li.nav-item{
+    margin-right: 50px;
+}
+
+header .header-wrap .support{
+    /* display: flex; */
+    align-items: center;
+}
+
+header .header-wrap .support i{
+    color: black;
+}
+
+header .header-wrap .menu-button{
+    display: none;
+}
+
+/* -------------------------------------------- */
+
+/* SECTION */
+.banner-image{
+    width: 100%;
+    height: auto;
+}
+
+.signature{
+    text-align: center;
+}
+
+.our-signature{
+    margin-top: 79px; 
+    margin-bottom: 0; 
+
+    font-family: 'Rubik';
+    font-style: normal;
+    /* font-weight: 700;
+    font-size: 24px;
+    line-height: 28px; */
+
+    color: #A5102E;
+}
+
+.grilled-hamburgers{
+    margin-top: 10px;    
+    margin-bottom: 0; 
+
+    font-family: 'Rubik';
+    font-style: normal;
+    /* font-weight: 700;
+    font-size: 44px;
+    line-height: 52px; */
+    text-align: center;
+
+    color: #000000;
+}
+/* .product{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 22px 17px rgba(0, 0, 0, 0.045), 0px 12.5px 10px rgba(0, 0, 0, 0.032), 0px 6.6px 5.5px rgba(0, 0, 0, 0.028), 0px 2.7px 2.2px rgba(0, 0, 0, 0.019);
+    border-radius: 10px;
+} */
+
+.product__star{
+    color: #F9C744;
+    border-radius: 0.5px;
+}
+
+.product__image{
+    width: 100%;
+}
+
+.product__border{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 22px 17px rgba(0, 0, 0, 0.045), 0px 12.5px 10px rgba(0, 0, 0, 0.032), 0px 6.6px 5.5px rgba(0, 0, 0, 0.028), 0px 2.7px 2.2px rgba(0, 0, 0, 0.019);
+    border-radius: 10px;
+}
+
+.product__price--main{
+    /* padding: 8px 11px 7.2px 7px;    */
+
+    background: #4D2C21;
+    border-radius: 10px;
+
+    text-align: center;
+    color: #F9C744;
+    font-family: 'Rubik';
+    font-style: normal;
+    /* font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;     */
+}
+
+.product__price--sale{
+    font-family: 'Rubik';
+    font-style: normal;
+    /* font-weight: 700;
+    font-size: 14px;
+    line-height: 17px; */
+
+    text-align: center;
+
+    color: #999999;
+}
+
+.product__button{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.25);
+}
+
+.more_burgers--button{
+    background: #A5102E;
+    border-radius: 25px;
+    border: none;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.product__burgers{
+    background-image: url("../img/Banner_frame.png");
+}
+
+.more_burgers--button--1{
+    background: #A5102E;
+    border-radius: 25px;
+    border: none;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* -------------------------------------------- */
+
+@media (max-width: 1199.98px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    header .header-wrap ul.nav-menu{
+        display: none;
+    }
+
+    header .header-wrap .menu-button{
+        display: flex;
+        align-items: center;        
+        font-size: xx-large;
+    }
+
+    header .header-wrap .menu-button i{
+        color: black;
+    }
+
+    .banner-image{
+        width: 100%;
+        height: auto;
+    }
+
+    .signature .our-signature{     
+        color: #EA5A47;
+    }
+
+    /* .signature .grilled-hamburgers{
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+    } */
+}

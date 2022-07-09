@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="114424fb-c5ec-48d1-a0be-930490e0d46e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2BTHZzt1VmrRl2lxHZR4GjtmLYz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bitivn" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="114424fb-c5ec-48d1-a0be-930490e0d46e" name="Default Changelist" comment="" />
+      <created>1656923213466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656923213466</updated>
+      <workItem from="1656923214727" duration="5313000" />
+      <workItem from="1656942153344" duration="3000" />
+      <workItem from="1656942294844" duration="4675000" />
+      <workItem from="1656982897831" duration="27454000" />
+      <workItem from="1657069662694" duration="3326000" />
+      <workItem from="1657073899688" duration="3855000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="26" key="#Inspections" timestamp="1657008013528">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="26" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1657008013527" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1657073722592">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1657073722592" />
+  </component>
+</project>
