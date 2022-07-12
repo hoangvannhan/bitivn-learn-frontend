@@ -1,0 +1,116 @@
+$font-size-main: 16px;
+$font-family-main: 'Open Sans';
+$font-style-main: normal;
+$font-weight-main: 600;
+$font-height-main: 22px;
+
+$bgcolor: white;
+
+$main-color : #D9282F;
+$main-dark-color : #821618;
+$sub-color : #FFECEC;
+
+$back-color : #140000;
+$grey-color : #545454;
+
+*{
+    box-sizing: border-box !important;
+}
+
+ul{
+    list-style: none;
+ }
+ 
+ a:link {
+    color: #A0A0A0;
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:visited {
+    color: #A0A0A0;
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  } 
+
+.font{
+    font-family: $font-family-main;
+    font-style: $font-style-main;
+    font-weight: $font-weight-main;
+    font-size: $font-size-main;
+    line-height: $font-height-main;
+
+    &--header-top{
+        @extend .font;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: white;
+    }
+
+    &--header-bottom{
+        @extend .font;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: black;
+    }
+
+    &--nav{  
+        @extend .font;      
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.btn-custom{
+    padding: 11px 24px;
+    border-radius: 60px;
+    border: none;
+    color: $grey-color;
+    text-transform: uppercase;
+    background-color: #fff;
+
+    &--red{
+        @extend .btn-custom;
+        background-color: $main-color;
+        color: white;
+    }    
+
+    &--red-outline{
+        @extend .btn-custom;
+        background-color: unset;
+        border: 1px solid $main-color;
+        color: $main-color;
+    }
+
+    &--red-light{
+        @extend .btn-custom;
+        background-color: $sub-color;
+        color: $main-color;
+    }
+}
+
+.header--top{
+   $bgcolor: #340001;
+   background-color: $bgcolor;
+}
+
+.header--bottom{
+    background-color: $bgcolor;
+}
+
+nav{
+    background-color: $main-dark-color;
+}

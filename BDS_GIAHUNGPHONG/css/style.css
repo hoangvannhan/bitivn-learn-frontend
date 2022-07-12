@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box !important; }
+
+ul {
+  list-style: none; }
+
+a:link {
+  color: #A0A0A0;
+  background-color: transparent;
+  text-decoration: none; }
+
+a:visited {
+  color: #A0A0A0;
+  background-color: transparent;
+  text-decoration: none; }
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none; }
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none; }
+
+.font, .font--header-top, .font--header-bottom, .font--nav {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px; }
+  .font--header-top {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: white; }
+  .font--header-bottom {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: black; }
+  .font--nav {
+    font-size: 18px;
+    line-height: 25px; }
+
+.btn-custom, .btn-custom--red, .btn-custom--red-outline, .btn-custom--red-light {
+  padding: 11px 24px;
+  border-radius: 60px;
+  border: none;
+  color: #545454;
+  text-transform: uppercase;
+  background-color: #fff; }
+  .btn-custom--red {
+    background-color: #D9282F;
+    color: white; }
+  .btn-custom--red-outline {
+    background-color: unset;
+    border: 1px solid #D9282F;
+    color: #D9282F; }
+  .btn-custom--red-light {
+    background-color: #FFECEC;
+    color: #D9282F; }
+
+.header--top {
+  background-color: #340001; }
+
+.header--bottom {
+  background-color: white; }
+
+nav {
+  background-color: #821618; }
+
+/*# sourceMappingURL=style.css.map */
