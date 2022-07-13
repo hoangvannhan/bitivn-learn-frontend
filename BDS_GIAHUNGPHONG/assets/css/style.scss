@@ -64,7 +64,7 @@ ul{
 }
 
 .btn-custom{
-    padding: 16px 48px;
+    padding: 16px 40px;
     border-radius: 60px;
     border: none;
     color: $grey-color;
@@ -110,11 +110,10 @@ nav{
 }
 
 .banner-top{
-    height: 100vh;
-    background-image: url('../img/body/Banner_1.png');   
-    padding-top: 20%;
-    padding-left: 15%;
-    padding-right: 15%;
+    background-image: url('/storage/upload/img/body/Banner_1.png');   
+    background-size: cover;
+    padding: 10% 15% 10% 15%;
+    
     &-input-button{
         position: relative;
         max-width: 970px;
@@ -138,6 +137,104 @@ nav{
     border-radius: 10px;
 }
 
-@media screen {
+div.intro{
+    margin-top: 150px;
+    background: linear-gradient(90deg, #ca8b8d 25.51%, rgba(217, 40, 47, 0) 81.59%);
+ }
+
+
+div.intro-picture{
+    height: 320px;
+    img.intro-picture{  
+        &-first{
+            position: relative; 
+            top: -80px;   
+
+            border-radius: 11.0457px;
+
+            width: 80%;
+        }
     
+        &-second{
+            position: relative;  
+            left: -191px;        
+            top: 90px;    
+
+            border-radius: 7.47208px;
+
+            width: 50%;
+
+            margin-bottom: 10px;
+            }
+        }
+}
+
+h1.description{
+    @extend .font;
+    color: #821618;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+p.description-header{
+    @extend .font;
+    font-size: 16px;
+    line-height: 22px;
+    color: #140000;
+}
+p.description-content{
+    @extend .font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #545454;
+}
+// .description-image {
+
+//     max-height: 466px;
+//     height: 100%;
+//     position: relative;
+
+
+//     .section__description-image-picture {
+//       max-width: 574px;
+//       width: 100%;
+//       height: 544px;
+
+//       position: relative;
+
+//       img.section__description-image-picture-1 {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         position: absolute;
+//         top: -60px;
+//         left: -80px;
+//       }
+
+//       img.section__description-image-logo {
+//         max-width: 388px;
+//         width: 100%;
+//         max-height: 368px;
+//         height: 100%;
+//         object-fit: cover;
+//         position: absolute;
+//         top: 163px;
+//         left: 217px;
+//       }
+
+//     }
+//   }
+
+
+div.featured-real-estate{
+    margin-top: 10%;
+    background-color: #F9F9F9;
+}
+
+@media  screen and (max-width: 992px) {
+    div.intro-picture{
+        height: auto;
+    }
+
 }

@@ -12,7 +12,7 @@ ul {
     background-color: transparent;
     text-decoration: none; }
 
-.font, .font--header-top, .font--header-bottom, .font--nav {
+.font, .font--header-top, .font--header-bottom, .font--nav, h1.description, p.description-header, p.description-content {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -33,7 +33,7 @@ ul {
     line-height: 25px; }
 
 .btn-custom, .btn-custom--red, .btn-custom--red-outline, .btn-custom--red-light {
-  padding: 16px 48px;
+  padding: 16px 40px;
   border-radius: 60px;
   border: none;
   color: #545454;
@@ -61,11 +61,9 @@ nav {
   background-color: #821618; }
 
 .banner-top {
-  height: 100vh;
-  background-image: url("../img/body/Banner_1.png");
-  padding-top: 20%;
-  padding-left: 15%;
-  padding-right: 15%; }
+  background-image: url("/storage/upload/img/body/Banner_1.png");
+  background-size: cover;
+  padding: 10% 15% 10% 15%; }
   .banner-top-input-button {
     position: relative;
     max-width: 970px;
@@ -83,5 +81,48 @@ nav {
 .commit-frame {
   box-shadow: 0.919953px 28.4889px 80.9037px rgba(0, 0, 0, 0.0425185), 0.477668px 14.7923px 41.275px rgba(0, 0, 0, 0.035), 0.194605px 6.02649px 20.6963px rgba(0, 0, 0, 0.0274815), 0.0442285px 1.36966px 9.99537px rgba(0, 0, 0, 0.0168519);
   border-radius: 10px; }
+
+div.intro {
+  margin-top: 150px;
+  background: linear-gradient(90deg, #ca8b8d 25.51%, rgba(217, 40, 47, 0) 81.59%); }
+
+div.intro-picture {
+  height: 320px; }
+  div.intro-picture img.intro-picture-first {
+    position: relative;
+    top: -80px;
+    border-radius: 11.0457px;
+    width: 80%; }
+  div.intro-picture img.intro-picture-second {
+    position: relative;
+    left: -191px;
+    top: 90px;
+    border-radius: 7.47208px;
+    width: 50%;
+    margin-bottom: 10px; }
+
+h1.description {
+  color: #821618;
+  font-size: 32px;
+  line-height: 44px; }
+
+p.description-header {
+  font-size: 16px;
+  line-height: 22px;
+  color: #140000; }
+
+p.description-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #545454; }
+
+div.featured-real-estate {
+  margin-top: 10%;
+  background-color: #F9F9F9; }
+
+@media screen and (max-width: 992px) {
+  div.intro-picture {
+    height: auto; } }
 
 /*# sourceMappingURL=style.css.map */
