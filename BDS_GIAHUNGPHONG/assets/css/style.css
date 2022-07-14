@@ -11,8 +11,31 @@ ul {
     color: white;
     background-color: transparent;
     text-decoration: none; }
+  ul li a button:link, ul li a button:visited {
+    background-color: #FFECEC; }
+  ul li a button:hover, ul li a button:active {
+    background-color: #D9282F; }
 
-.font, .font--header-top, .font--header-bottom, .font--nav, h1.description, p.description-header, p.description-content {
+div.card:hover {
+  background-color: #ebcbcb;
+  -ms-transform: scale(1.06);
+  /* IE 9 */
+  -webkit-transform: scale(1.06);
+  /* Safari 3-8 */
+  transform: scale(1.06); }
+
+div.card-1:hover {
+  -ms-transform: scale(1.06);
+  /* IE 9 */
+  -webkit-transform: scale(1.06);
+  /* Safari 3-8 */
+  transform: scale(1.06); }
+  div.card-1:hover div.building-info-detail {
+    display: block; }
+  div.card-1:hover img.building-info-image {
+    display: none; }
+
+.font, .font--header-top, .font--header-bottom, .font--nav, span.description, p.description-header, p.description-content {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -32,7 +55,7 @@ ul {
     font-size: 18px;
     line-height: 25px; }
 
-.btn-custom, .btn-custom--red, .btn-custom--red-outline, .btn-custom--red-light {
+.btn-custom, .btn-custom--red, .btn-custom--red-outline, .btn-custom--red-light, .btn-custom--red-light-1 {
   padding: 16px 40px;
   border-radius: 60px;
   border: none;
@@ -40,8 +63,6 @@ ul {
   text-transform: uppercase;
   background-color: #fff; }
   .btn-custom--red {
-    width: 198px;
-    height: 56px;
     background-color: #D9282F;
     color: white; }
   .btn-custom--red-outline {
@@ -51,6 +72,14 @@ ul {
   .btn-custom--red-light {
     background-color: #FFECEC;
     color: #D9282F; }
+  .btn-custom--red-light-1 {
+    text-transform: none;
+    background-color: #FFECEC;
+    color: #140000; }
+
+div.building-info-detail {
+  display: none;
+  text-align: center; }
 
 .header--top {
   background-color: #340001; }
@@ -101,15 +130,19 @@ div.intro-picture {
     width: 50%;
     margin-bottom: 10px; }
 
-h1.description {
+span.description {
   color: #821618;
   font-size: 32px;
   line-height: 44px; }
 
+span.underline {
+  border-bottom: 2px solid #821618; }
+
 p.description-header {
   font-size: 16px;
   line-height: 22px;
-  color: #140000; }
+  color: #140000;
+  margin-top: 10px; }
 
 p.description-content {
   font-weight: 400;
@@ -120,6 +153,30 @@ p.description-content {
 div.featured-real-estate {
   margin-top: 10%;
   background-color: #F9F9F9; }
+
+div.card {
+  padding: 0;
+  transition: transform 0.2s; }
+
+div.card-1 {
+  transition: transform 0.2s; }
+
+a.nav-link {
+  padding-left: 0; }
+
+div.card-info {
+  display: flex;
+  justify-content: space-between; }
+
+div.card-frame {
+  margin-top: 20px; }
+
+div.promotion {
+  width: 100%;
+  margin-top: 20px;
+  background-image: url("/storage/upload/img/body/Promotion_bg_2.png"); }
+  div.promotion p {
+    font-size: 20px; }
 
 @media screen and (max-width: 992px) {
   div.intro-picture {
