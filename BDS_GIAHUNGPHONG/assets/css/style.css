@@ -24,16 +24,24 @@ div.card:hover {
   /* Safari 3-8 */
   transform: scale(1.06); }
 
-div.card-1:hover {
+div.card.card-2:hover {
+  background-color: white;
+  -ms-transform: scale(1);
+  /* IE 9 */
+  -webkit-transform: scale(1);
+  /* Safari 3-8 */
+  transform: scale(1); }
+
+div.card-1:hover, div.card-1:active {
   -ms-transform: scale(1.06);
   /* IE 9 */
   -webkit-transform: scale(1.06);
   /* Safari 3-8 */
   transform: scale(1.06); }
-  div.card-1:hover div.building-info-detail {
-    display: block; }
-  div.card-1:hover img.building-info-image {
-    display: none; }
+  div.card-1:hover div.building-info-detail, div.card-1:active div.building-info-detail {
+    height: 100%; }
+  div.card-1:hover img.building-info-image, div.card-1:active img.building-info-image {
+    opacity: 0.2; }
 
 .font, .font--header-top, .font--header-bottom, .font--nav, span.description, p.description-header, p.description-content {
   font-family: "Open Sans";
@@ -77,10 +85,6 @@ div.card-1:hover {
     background-color: #FFECEC;
     color: #140000; }
 
-div.building-info-detail {
-  display: none;
-  text-align: center; }
-
 .header--top {
   background-color: #340001; }
 .header--bottom {
@@ -90,7 +94,7 @@ nav {
   background-color: #821618; }
 
 .banner-top {
-  background-image: url("/storage/upload/img/body/Banner_1.png");
+  background-image: url("storage/upload/img/body/Banner_1.png");
   background-size: cover;
   padding: 10% 15% 10% 15%; }
   .banner-top-input-button {
@@ -154,12 +158,24 @@ div.featured-real-estate {
   margin-top: 10%;
   background-color: #F9F9F9; }
 
+div.breakingnew {
+  margin-top: 10%; }
+
 div.card {
   padding: 0;
   transition: transform 0.2s; }
 
 div.card-1 {
-  transition: transform 0.2s; }
+  transition: transform 0.2s;
+  position: relative; }
+
+div.card-2 {
+  background: #F9F9F9;
+  text-align: start;
+  align-items: center; }
+
+div.card.card-2 {
+  transition: none; }
 
 a.nav-link {
   padding-left: 0; }
@@ -174,12 +190,56 @@ div.card-frame {
 div.promotion {
   width: 100%;
   margin-top: 20px;
-  background-image: url("/storage/upload/img/body/Promotion_bg_2.png"); }
+  background-image: url("storage/upload/img/body/Promotion_bg.png"); }
   div.promotion p {
     font-size: 20px; }
 
+div.building-info-detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 0;
+  transition: .5s ease;
+  text-align: center;
+  padding: 20px 20px 0 20px; }
+
+div.partner {
+  margin-top: 4%;
+  background-image: url("storage/upload/img/body/partner/bg.png");
+  background-size: cover; }
+
+img.partner-image {
+  margin-top: 6%; }
+
+div.footer-top {
+  background-image: url("storage/upload/img/footer/bg.png"); }
+
+div.footer-content {
+  color: white; }
+  div.footer-content h4 {
+    margin-bottom: 10px; }
+  div.footer-content ul {
+    padding-left: 0; }
+    div.footer-content ul li {
+      margin-bottom: 4px; }
+      div.footer-content ul li a {
+        color: white; }
+        div.footer-content ul li a:hover {
+          color: #ca2424; }
+
 @media screen and (max-width: 992px) {
+  div.header--bottom {
+    display: none; }
+
   div.intro-picture {
-    height: auto; } }
+    height: auto; }
+
+  div.building-info-detail {
+    padding: 0;
+    font-size: 8px; }
+    div.building-info-detail h4 {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

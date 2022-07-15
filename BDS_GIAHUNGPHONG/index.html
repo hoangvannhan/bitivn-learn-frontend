@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" >
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" >
+
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- owl-carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>    
+
 </head>
 <body>
     <header>
@@ -30,28 +39,7 @@
             </div>
         </div>
         <div class="header--bottom">
-            <div class="container">
-                <!-- <div class="d-flex justify-content-between align-items-center p-1">
-                    <img class="logo" src="storage/upload/img/header/logo.png" alt="">
-                    <div class="d-flex">
-                        <img class="hotline" src="storage/upload/img/header/phone.png" alt="">
-                        <ul class="font--header-bottom m-0 p-2">
-                            <li>Hotline</li>
-                            <li>0911284339 - 0915431616</li>
-                        </ul> 
-                    </div>
-                    
-                    <div class="d-flex">
-                        <img class="email" src="storage/upload/img/header/email.png" alt="">
-                        <ul class="font--header-bottom m-0 p-2">
-                            <li>Email</li>
-                            <li>infoghp.39@gmail.com</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button class="btn-custom--red"><img src="storage/upload/img/header/icon.png"> Đăng tin</button>
-                    </div>
-                </div> -->
+            <div class="container">                
                 <div class="row row-cols-4 row-cols-sm-4 row-cols-lg-4 d-flex justify-content-between align-items-center p-1">
                     <div class="col">
                         <img class="logo" src="storage/upload/img/header/logo.png" alt="">
@@ -103,77 +91,46 @@
             </div>
     </div>
     <section>
-        <div class="container">
-            <div class="carouselProduct text-center my-5"> 
-                <div id="carouselCaptions" class="carousel slide mt-4" data-bs-ride="carousel">                    
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="row">                            
-                            <div class="col-4 commit-frame py-3">                    
-                                <img class="mb-2" style="width: 50%;" src="/storage/upload/img/body/building/building_1.png" alt=""> 
-                                <h6>Cần bán</h6>
-                                <p>Giá bán, quy trình làm việc rõ ràng, minh bạch. Chủ nhà & khách làm việc trực tiếp</p>
-                                <button class="btn-custom--red-outline">xem thêm -></button> 
-                            </div> 
-
-                            <div class="col-4 commit-frame py-3">                    
-                                <img class="mb-2" style="width: 50%;" src="/storage/upload/img/body/building/building_4.png" alt=""> 
-                                <h6>Cần mua</h6>
-                                <p>Chủ nhà và khách thuê được chứng thực an toàn khi giao dịch</p>
-                                <button class="btn-custom--red-outline">xem thêm -></button> 
-                            </div>
-            
-                            <div class="col-4 commit-frame py-3">                    
-                                <img class="mb-2" style="width: 50%;" src="/storage/upload/img/body/building/building_7.png" alt=""> 
-                                <h6>Hổ trợ pháp lý</h6>
-                                <p>Tư vấn giao dịch bất động sản với đội ngũ môi giới chuyên nghiệp</p>
-                                <button class="btn-custom--red-outline">xem thêm -></button> 
-                            </div>
-                             
-                        </div>                       
-                      </div>  
-                      <div class="carousel-item">
-                        <div class="row">                            
-                            <div class="col-4 commit-frame py-3">                    
-                                <img class="mb-2" style="width: 50%;" src="/storage/upload/img/body/building/building_2.png" alt=""> 
-                                <h6>Cần bán</h6>
-                                <p>Giá bán, quy trình làm việc rõ ràng, minh bạch. Chủ nhà & khách làm việc trực tiếp</p>
-                                <button class="btn-custom--red-outline"><a href="#"> xem thêm -></a></button> 
-                            </div> 
-
-                            <div class="col-4 commit-frame py-3">                    
-                                <img class="mb-2" style="width: 50%;" src="/storage/upload/img/body/building/building_7.png" alt=""> 
-                                <h6>Cần mua</h6>
-                                <p>Chủ nhà và khách thuê được chứng thực an toàn khi giao dịch</p>
-                                <button class="btn-custom--red-outline">xem thêm -></button> 
-                            </div>
-            
-                            <div class="col-4 commit-frame py-3">                    
-                                <img class="mb-2" style="width: 50%;" src="/storage/upload/img/body/building/building_5.png" alt=""> 
-                                <h6>Hổ trợ pháp lý</h6>
-                                <p>Tư vấn giao dịch bất động sản với đội ngũ môi giới chuyên nghiệp</p>
-                                <button class="btn-custom--red-outline">xem thêm -></button> 
-                            </div>
-                             
-                        </div>                       
-                      </div>
-                    </div>                    
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button> 
-                    <!-- <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>                    -->
-                  </div>
-                  
-            </div> 
+        <div class="container"> 
+            <div class="owl-carousel owl-theme text-center pt-5">
+                <div class="item">
+                    <img src="storage/upload/img/body/building/building_1.png" alt=""> 
+                    <h6>Cần bán</h6>
+                    <p>Giá bán, quy trình làm việc rõ ràng, minh bạch. Chủ nhà & khách làm việc trực tiếp</p>
+                    <button class="btn-custom--red-outline">xem thêm -></button>                                 
+                </div>
+                <div class="item">
+                    <img src="storage/upload/img/body/building/building_4.png" alt=""> 
+                    <h6>Cần mua</h6>
+                    <p>Chủ nhà và khách thuê được chứng thực an toàn khi giao dịch</p>
+                    <button class="btn-custom--red-outline">xem thêm -></button>
+                </div>
+                <div class="item">
+                    <img src="storage/upload/img/body/building/building_5.png" alt=""> 
+                    <h6>Hổ trợ pháp lý</h6>
+                    <p>Tư vấn giao dịch bất động sản với đội ngũ môi giới chuyên nghiệp</p>
+                    <button class="btn-custom--red-outline">xem thêm -></button>
+                </div>
+                <div class="item">
+                    <img src="storage/upload/img/body/building/building_2.png" alt=""> 
+                    <h6>Cần bán</h6>
+                    <p>Giá bán, quy trình làm việc rõ ràng, minh bạch. Chủ nhà & khách làm việc trực tiếp</p>
+                    <button class="btn-custom--red-outline">xem thêm -></button>                                 
+                </div>
+                <div class="item">
+                    <img src="storage/upload/img/body/building/building_7.png" alt=""> 
+                    <h6>Cần mua</h6>
+                    <p>Chủ nhà và khách thuê được chứng thực an toàn khi giao dịch</p>
+                    <button class="btn-custom--red-outline">xem thêm -></button>
+                </div>
+                <div class="item">
+                    <img src="storage/upload/img/body/building/building_5.png" alt=""> 
+                    <h6>Hổ trợ pháp lý</h6>
+                    <p>Tư vấn giao dịch bất động sản với đội ngũ môi giới chuyên nghiệp</p>
+                    <button class="btn-custom--red-outline">xem thêm -></button>
+                </div>
+                
+            </div>  
         </div>
 
         <div class="intro">
@@ -634,10 +591,10 @@
                             <div class="card-1 col">
                                 <img class="building-info-image img-fluid" src="storage/upload/img/body/building/building_7.png" alt="">
                                 <div class="building-info-detail">
-                                    <h4>Nhà mặt phố</h4>
-                                    <p>Nằm gần trung tâm thành phố, không gian thoáng mát</p>
-                                    <p>Diện tích: 200 m2</p>
-                                    <p>Giá: 20 tỷ VND</p>
+                                        <h4>Nhà mặt phố</h4>
+                                        <p>Nằm gần trung tâm thành phố, không gian thoáng mát</p>
+                                        <p>Diện tích: 200 m2</p>
+                                        <p>Giá: 20 tỷ VND</p>
                                 </div>
                             </div>
                             <div class="card-1 col">
@@ -783,27 +740,163 @@
         </div>
 
         <div class="promotion text-center text-white py-4">
-           <!-- <img src="storage/upload/img/body/Promotion_bg_1.png" alt="">   -->
             <p>Liên hệ với chúng tôi ngay để cập nhật và thực hiện hóa nhu cầu<br>của bạn ngay tức khắc!</p>
             <button class="btn-custom--red-outline bg-white">Gửi thông tin</button>
         </div>
         
         <div class="container">
             <div class="row activities">
-                <div class="col-lg-4">                      
+                <div class="col-lg-4 pt-5">                      
                     <span class="underline description">HOẠT ĐỘNG CÔNG TY</span>
                     <p class="description-header">Khám phá các hoạt động nổi bật của Gia Hưng Phong</p>                            
                     <p class="description-content">Gia Hưng Phong ra đời nhằm ứng với quẻ Lôi Hỏa Phong. Là có được có những nhân sự nòng cốt, trí đồng đạo hợp, cùng chung sức, chung lòng phát triển GHP thành một tập đoàn bền vững, lớn mạnh, gặt hái.</p>
                     <button class="btn-custom--red-outline">Xem thêm -></button> 
                 </div>
                 <div class="col-lg-8">
-
+                    <div class="owl-carousel owl-theme text-center pt-5">
+                        <div class="item">
+                            <img src="storage/upload/img/body/building/building_1.png" alt="">                                                             
+                        </div>
+                        <div class="item">
+                            <img src="storage/upload/img/body/building/building_4.png" alt=""> 
+                        </div>
+                        <div class="item">
+                            <img src="storage/upload/img/body/building/building_5.png" alt=""> 
+                        </div>
+                        <div class="item">
+                            <img src="storage/upload/img/body/building/building_2.png" alt=""> 
+                        </div>
+                        <div class="item">
+                            <img src="storage/upload/img/body/building/building_7.png" alt=""> 
+                        </div>
+                        <div class="item">
+                            <img src="storage/upload/img/body/building/building_5.png" alt=""> 
+                        </div>                        
+                    </div> 
                 </div>
 
             </div>
         </div>
 
+        <div class="breakingnew">            
+            <div class="container text-center">
+                <span class="underline description">TIN TỨC NỔI BẬT</span> 
+                <p class="description-header">Khám phá các tin tức nổi bật hằng ngày cùng Gia Hưng phong!</p>
+                    <div class="row card-2"> 
+                            <div class="col-12 col-sm-12 col-lg-8">
+                                <img class="breakingnew-image img-fluid" src="storage/upload/img/body/building/building_9.png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-4">                                    
+                                    <h5>Không gian xanh và những xu hướng hàng đầu vào những tháng cuối năm 2022</h5>
+                                    <p>Trong bối cảnh đại dịch COVID-19 ngày càng phức tạp và đang tác động tiêu cực đến sản xuất, ảnh hưởng không nhỏ đến các doanh nghiệp (DN). Nhằm hỗ trợ kịp thời để DN từng bước vượt qua đại dịch, các bộ, ngành đã và đang có chính sách cụ thể, thiết thực. Cổng TTĐT Chính phủ thực hiện loạt bài viết về những kiến nghị của DN...</p>
+                                    <p>26/04/2022</p>
+                            </div>                        
+                    </div>  
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-3 card-frame"> 
+                            <div class="col">
+                                <div class="card card-2">
+                                    <img src="storage/upload/img/body/building/building_10.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">1,4 tỷ USD rót vào thị trường...</h5>
+                                        <p class="card-text">Theo chuyên gia, Việt Nam còn khả năng thu hút được nhiều hơn con số 1,4 USD vốn đầu tư</p>
+                                        <div class="card-info">                                       
+                                            <a href="#">xem thêm ></a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-2">
+                                    <img src="storage/upload/img/body/building/building_11.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">1,4 tỷ USD rót vào thị trường...</h5>
+                                        <p class="card-text">Theo chuyên gia, Việt Nam còn khả năng thu hút được nhiều hơn con số 1,4 USD vốn đầu tư</p>
+                                        <div class="card-info">                                       
+                                            <a href="#">xem thêm ></a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-2">
+                                    <img src="storage/upload/img/body/building/building_12.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">1,4 tỷ USD rót vào thị trường...</h5>
+                                        <p class="card-text">Theo chuyên gia, Việt Nam còn khả năng thu hút được nhiều hơn con số 1,4 USD vốn đầu tư</p>
+                                        <div class="card-info">                                       
+                                            <a href="#">xem thêm ></a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>                               
+                    </div>                        
+            </div>
+        </div>
+
+        <div class="partner">
+            <div class="container">
+                <div class="row row-cols-4 row-cols-sm-4 row-lg-4">  
+                    <img class="partner-image" src="storage/upload/img/body/partner/Partner.png" alt="">
+                    <img class="partner-image" src="storage/upload/img/body/partner/Partner-1.png" alt="">
+                    <img class="partner-image" src="storage/upload/img/body/partner/Partner-2.png" alt="">
+                    <img class="partner-image" src="storage/upload/img/body/partner/Partner-3.png" alt="">                    
+                </div>
+            </div>
+        </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="footer-top">                
+                <div class="container">
+                    <div class="footer-content"> 
+                        <div class="text-center">
+                            <img class="footer-logo py-2" src="/storage/upload/img/footer/logo.png" alt="">
+                            <img class="img-fluid" src="storage/upload/img/footer/underline.png" alt="">
+                        </div>
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-4 py-4">                            
+                            <div>
+                                <h4>THÔNG TIN LIÊN LẠC</h4>
+                                <h6>CÔNG TY TNHH TƯ VẤN ĐẦU TƯ MÔI GIỚI BẤT ĐỘNG SẢN GIA HƯNG PHONG</h6>
+                                <p>Hotline: 0911284339 - 0915431616</p>
+                                <p>Email: infoghp.39@gmail.com</p> 
+                            </div>
+                            <div class="footer-content-list">
+                                <h4>DANH MỤC</h4>
+                                <ul>
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                    <li><a href="#">Danh mục sản phẩm</a></li>
+                                    <li><a href="#">Tin tức</a></li>  
+                                </ul>
+                            </div>
+                            <div class="footer-content-list">
+                                <h4>KHÁCH HÀNG</h4>
+                                <ul>
+                                    <li><a href="#">Cần mua nhà</a></li>
+                                    <li><a href="#">Cần bán nhà</a></li>
+                                    <li><a href="#">Bất động sản bán</a></li>
+                                    <li><a href="#">Bất động sản cho thuê</a></li>
+                                </ul>
+                            </div>   
+                            <div class="">
+                                <h4>THEO DÕI CHÚNG TÔI</h4>
+                                <img class="img-fluid" src="/storage/upload/img/footer/fanpage.png" alt="">                                
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="footer-bottom bg-dark text-center text-white">
+                <p>© Copyright by GIA HƯNG PHONG. All rights reserved | <span class="text-danger">Design by BITI.VN</span></p>
+        </div>       
+    </footer> 
+
+
 </body>
+<script src="assets/js/my-owl-script.js"></script>
 </html>
+

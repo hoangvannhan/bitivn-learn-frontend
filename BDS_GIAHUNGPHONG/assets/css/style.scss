@@ -37,8 +37,7 @@ ul{
         button:hover, button:active{
             background-color: $main-color;
         }
-    }
-    
+    }    
  } 
 
 div.card:hover{
@@ -48,18 +47,24 @@ div.card:hover{
     transform: scale(1.06);  
 }
 
-div.card-1:hover{
-    // background-color: rgb(235, 203, 203);    
+div.card.card-2:hover{
+    background-color: rgb(255, 255, 255);
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1);  
+}
+
+div.card-1:hover, div.card-1:active{ 
     -ms-transform: scale(1.06); /* IE 9 */
     -webkit-transform: scale(1.06); /* Safari 3-8 */
     transform: scale(1.06); 
     div.building-info-detail{
-        display: block;
-        // text-align: center;  
+        // display: block;  
+        height: 100%;      
     }      
 
     img.building-info-image{
-        display: none; 
+        opacity: 0.2;
     }  
 }
 
@@ -133,10 +138,6 @@ div.card-1:hover{
     }
 }
 
-div.building-info-detail{
-    display: none;
-    text-align: center;  
-}
 
 .header{        
     &--top{
@@ -244,6 +245,9 @@ div.featured-real-estate{
     margin-top: 10%;
     background-color: #F9F9F9;
 }
+div.breakingnew{
+    margin-top: 10%;
+}
 
 div.card{
     padding: 0;
@@ -251,6 +255,17 @@ div.card{
 }
 div.card-1{
     transition: transform 0.2s;
+    position: relative;
+}
+
+div.card-2{
+    background: #F9F9F9;
+    text-align: start;
+    align-items: center;
+}
+
+div.card.card-2{
+    transition: none;
 }
 
 a.nav-link{
@@ -270,7 +285,7 @@ div.card-frame{
 div.promotion{
     width: 100%;
     margin-top: 20px;
-    background-image: url("/storage/upload/img/body/Promotion_bg_2.png");
+    background-image: url("/storage/upload/img/body/Promotion_bg.png");
     
     // & img{
     //     opacity: 0.1;
@@ -281,13 +296,85 @@ div.promotion{
     
 }
 
+div.building-info-detail{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        height: 0;
+        transition: .5s ease;
+        text-align: center;
+
+        padding: 20px 20px 0 20px;
+    }
+
+
+div.partner{
+    margin-top: 4%;
+    background-image: url('/storage/upload/img/body/partner/bg.png');
+    background-size: cover;
+}
+
+img.partner-image{
+    margin-top: 6%; 
+}
+
+div.footer-top{
+    background-image: url('/storage/upload/img/footer/bg.png');
+
+    // & .footer-bg{
+    //     position: absolute;
+    // }
+    // & .footer-bg-1{
+    //     position: absolute;
+    // }
+    // & .container .footer-content{
+    //     position: absolute;        
+    // }
+}
+
+div.footer-content{
+    color: white;
+    h4{
+        margin-bottom: 10px;
+    }
+    ul{
+        padding-left: 0; 
+        li{            
+            margin-bottom: 4px;
+            a{
+                color: white;
+            &:hover{
+                color: rgb(202, 36, 36);
+            }
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 992px) {
+
+    div.header--bottom{
+        display: none;
+    }
+
     div.intro-picture{
-        height: auto;
+        height: auto;        
     }
     
-    // div.banner-top div button.btn-custom{
-    //     margin-top: 8px;
-    // }
+    div.building-info-detail{
+        padding: 0;
+        font-size: 8px;
+        & h4{
+            font-size: 12px;
+        }        
+    }
+}
 
+
+
+
+@media screen and (min-width: 993px) {  
 }
