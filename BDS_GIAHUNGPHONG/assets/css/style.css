@@ -15,6 +15,8 @@ ul {
     background-color: #FFECEC; }
   ul li a button:hover, ul li a button:active {
     background-color: #D9282F; }
+  ul li a button:focus {
+    background-color: #D9282F; }
 
 div.card:hover {
   background-color: #ebcbcb;
@@ -94,7 +96,7 @@ nav {
   background-color: #821618; }
 
 .banner-top {
-  background-image: url("storage/upload/img/body/Banner_1.png");
+  background-image: url("/storage/upload/img/body/Banner_1.png");
   background-size: cover;
   padding: 10% 15% 10% 15%; }
   .banner-top-input-button {
@@ -105,7 +107,8 @@ nav {
     width: 100%;
     height: 65px;
     border-radius: 30px;
-    border: none; }
+    border: none;
+    padding-left: 40px; }
   .banner-top-search {
     position: absolute;
     top: 4px;
@@ -190,7 +193,7 @@ div.card-frame {
 div.promotion {
   width: 100%;
   margin-top: 20px;
-  background-image: url("storage/upload/img/body/Promotion_bg.png"); }
+  background-image: url("/storage/upload/img/body/Promotion_bg.png"); }
   div.promotion p {
     font-size: 20px; }
 
@@ -207,14 +210,14 @@ div.building-info-detail {
 
 div.partner {
   margin-top: 4%;
-  background-image: url("storage/upload/img/body/partner/bg.png");
+  background-image: url("/storage/upload/img/body/partner/bg.png");
   background-size: cover; }
 
 img.partner-image {
   margin-top: 6%; }
 
 div.footer-top {
-  background-image: url("storage/upload/img/footer/bg.png"); }
+  background-image: url("/storage/upload/img/footer/bg.png"); }
 
 div.footer-content {
   color: white; }
@@ -229,7 +232,25 @@ div.footer-content {
         div.footer-content ul li a:hover {
           color: #ca2424; }
 
+div.owl-nav {
+  display: none; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 40px !important;
+  background: #545454 !important;
+  transition: width 0.5s !important; }
+
+.owl-theme .owl-dots .owl-dot span:hover {
+  width: 70px !important;
+  background: #D9282F !important; }
+
 @media screen and (max-width: 992px) {
+  nav.nav-menu {
+    display: none; }
+
+  div.header--top {
+    display: none; }
+
   div.header--bottom {
     display: none; }
 
@@ -240,6 +261,17 @@ div.footer-content {
     padding: 0;
     font-size: 8px; }
     div.building-info-detail h4 {
-      font-size: 12px; } }
+      font-size: 12px; }
+
+  .btn-custom, .btn-custom--red, .btn-custom--red-outline, .btn-custom--red-light, .btn-custom--red-light-1 {
+    padding: 5px 20px; }
+
+  .banner-top-input {
+    padding-left: 10px;
+    height: 43px;
+    font-size: 10px; } }
+@media screen and (min-width: 993px) {
+  nav.navbar {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
