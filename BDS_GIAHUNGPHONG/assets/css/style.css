@@ -3,17 +3,21 @@
 
 ul {
   list-style: none; }
-  ul a:link, ul a:visited {
+  ul a:link,
+  ul a:visited {
     color: #A0A0A0;
     background-color: transparent;
     text-decoration: none; }
-  ul a:hover, ul a:active {
+  ul a:hover,
+  ul a:active {
     color: white;
     background-color: transparent;
     text-decoration: none; }
-  ul li a button:link, ul li a button:visited {
+  ul li a button:link,
+  ul li a button:visited {
     background-color: #FFECEC; }
-  ul li a button:hover, ul li a button:active {
+  ul li a button:hover,
+  ul li a button:active {
     background-color: #D9282F; }
   ul li a button:focus {
     background-color: #D9282F; }
@@ -34,18 +38,21 @@ div.card.card-2:hover {
   /* Safari 3-8 */
   transform: scale(1); }
 
-div.card-1:hover, div.card-1:active {
+div.card-1:hover,
+div.card-1:active {
   -ms-transform: scale(1.06);
   /* IE 9 */
   -webkit-transform: scale(1.06);
   /* Safari 3-8 */
   transform: scale(1.06); }
-  div.card-1:hover div.building-info-detail, div.card-1:active div.building-info-detail {
+  div.card-1:hover div.building-info-detail,
+  div.card-1:active div.building-info-detail {
     height: 100%; }
-  div.card-1:hover img.building-info-image, div.card-1:active img.building-info-image {
+  div.card-1:hover img.building-info-image,
+  div.card-1:active img.building-info-image {
     opacity: 0.2; }
 
-.font, .font--header-top, .font--header-bottom, .font--nav, span.description, p.description-header, p.description-content {
+.font, .font--header-top, .font--header-bottom, .font--nav, span.description, p.description-header, p.description-content, div.dropdown button.dropbtn, div.dropdown div.dropdown-content a {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -142,7 +149,8 @@ span.description {
   font-size: 32px;
   line-height: 44px; }
 
-span.underline {
+span.underline,
+p.underline {
   border-bottom: 2px solid #821618; }
 
 p.description-header {
@@ -235,6 +243,9 @@ div.footer-content {
 div.owl-nav {
   display: none; }
 
+.owl-theme .owl-dots {
+  margin-top: 15px; }
+
 .owl-theme .owl-dots .owl-dot span {
   width: 40px !important;
   background: #545454 !important;
@@ -244,18 +255,131 @@ div.owl-nav {
   width: 70px !important;
   background: #D9282F !important; }
 
+div.dropdown {
+  position: relative;
+  display: inline-block; }
+  div.dropdown:hover .dropdown-content {
+    display: block; }
+  div.dropdown button.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: #A0A0A0;
+    padding: 10px; }
+    div.dropdown button.dropbtn:hover {
+      color: white; }
+  div.dropdown div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    width: 200px;
+    padding: 10px;
+    z-index: 1; }
+    div.dropdown div.dropdown-content a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #4F4F4F;
+      display: block;
+      margin-bottom: 5px; }
+      div.dropdown div.dropdown-content a:hover {
+        color: #821618;
+        font-weight: bold; }
+
+div.navigation {
+  padding: 10px 16px;
+  background-color: #F6F7F8; }
+
+ul.breadcrumb {
+  margin: 0; }
+  ul.breadcrumb li + li::before {
+    padding: 5px;
+    color: #393939;
+    content: "/\00a0"; }
+  ul.breadcrumb li a:hover {
+    color: #821618;
+    text-decoration: underline; }
+  ul.breadcrumb li:last-child a:last-child {
+    color: #821618;
+    font-weight: bold; }
+
+div.news {
+  padding-top: 50px; }
+  div.news div.news-search {
+    background: #F6F7F8;
+    border-radius: 8px;
+    margin-bottom: 20px; }
+    div.news div.news-search input {
+      width: 80%;
+      border: none;
+      background: transparent;
+      padding-left: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  div.news div.news-category,
+  div.news div.news-hotnews {
+    background: #F6F7F8;
+    border-radius: 8px; }
+    div.news div.news-category ul,
+    div.news div.news-hotnews ul {
+      padding: 20px 32px; }
+      div.news div.news-category ul li,
+      div.news div.news-hotnews ul li {
+        margin-bottom: 7px; }
+  div.news div.news-category ul {
+    padding: 20px 32px; }
+    div.news div.news-category ul li {
+      margin-bottom: 7px; }
+    div.news div.news-category ul :hover {
+      background-color: white;
+      border-radius: 8px; }
+      div.news div.news-category ul :hover ::before {
+        color: #821618;
+        margin-right: 15px;
+        content: "|"; }
+      div.news div.news-category ul :hover ::after {
+        color: #821618;
+        margin-left: 20px;
+        content: ">"; }
+      div.news div.news-category ul :hover a {
+        color: #821618; }
+  div.news div.news-hotnews-product {
+    display: flex; }
+    div.news div.news-hotnews-product :hover {
+      color: #821618; }
+    div.news div.news-hotnews-product p {
+      padding-left: 10px;
+      padding-top: 15px; }
+  div.news div.news-product {
+    display: flex;
+    background: #F9F9F9;
+    border: 1px solid #F9F9F9;
+    border-radius: 8px;
+    margin-bottom: 10px; }
+    div.news div.news-product div.news-product-info {
+      padding: 30px 0px 20px 15px; }
+
+div.news-pagination {
+  margin: 10px;
+  margin-bottom: 20px; }
+  div.news-pagination a:hover:not(.active) {
+    background-color: #ddd; }
+  div.news-pagination a.active {
+    background-color: #821618;
+    color: white; }
+  div.news-pagination a {
+    color: black;
+    padding: 3px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 20px; }
+
 @media screen and (max-width: 992px) {
-  nav.nav-menu {
-    display: none; }
-
-  div.header--top {
-    display: none; }
-
-  div.header--bottom {
-    display: none; }
-
+  nav.nav-menu,
+  div.header--top,
+  div.header--bottom,
   div.intro-picture {
-    height: auto; }
+    display: none; }
 
   div.building-info-detail {
     padding: 0;
@@ -269,7 +393,21 @@ div.owl-nav {
   .banner-top-input {
     padding-left: 10px;
     height: 43px;
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  div.dropdown {
+    width: 100%; }
+    div.dropdown div.dropdown-content {
+      position: relative;
+      width: 100%; }
+
+  div.news {
+    padding-top: 25px; }
+    div.news div.news-product {
+      display: block;
+      margin-bottom: 10px; }
+      div.news div.news-product div.news-product-info {
+        padding: 10px 0; } }
 @media screen and (min-width: 993px) {
   nav.navbar {
     display: none; } }
